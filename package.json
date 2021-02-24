@@ -1,0 +1,42 @@
+{
+  "name": "slack-read-only-chan",
+  "version": "1.0.0",
+  "description": "Read-only slack channels 🤫",
+  "author": "Maxime MIRAMOND <maxime@gojob.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "node": ">=10 <15",
+    "yarn": "^1.22"
+  },
+  "volta": {
+    "node": "14.21.3",
+    "yarn": "1.22.19"
+  },
+  "scripts": {
+    "test": "echo 'no test'",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@slack/rtm-api": "^6.0.0",
+    "@slack/web-api": "^6.0.0",
+    "dotenv-safe": "^8.2.0",
+    "exit-hook-plus": "^0.2.0",
+    "lodash": "^4.17.21",
+    "rxjs": "^6.6.6",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@gojob/eslint-config": "^3.0.0",
+    "@types/dotenv-safe": "^8.1.1",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.31",
+    "eslint": "^7.21.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.2.2"
+  }
+}
